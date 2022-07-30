@@ -1,7 +1,55 @@
-import ImportMeta from './env/env.js'
-
 import { readdirSync, statSync } from 'fs'
 import path from 'path'
+import ImportMeta from './env/env.js'
+
+/** @type {import("snowpack").SnowpackUserConfig } */
+const SnowpackConfig = () => {
+	return {
+		alias: {
+			js: './src',
+		},
+		mount: generateMountConfig({
+			default: {
+				src: '/dist',
+				public: {
+					url: '/',
+					static: true,
+					resolve: false,
+				},
+			},
+			deep: {
+				assets: {
+					url: '/dist',
+					static: true,
+					resolve: false,
+				},
+			},
+		}),
+		env: ImportMeta.env,
+		plugins: [
+			/* ... */
+		],
+		routes: [
+			/* Enable an SPA Fallback in development: */
+			// {"match": "routes", "src": ".*", "dest": "/index.html"},
+		],
+		optimize: {
+			bundle: true,
+			minify: true,
+			target: 'es2018',
+			treeshake: true,
+		},
+		packageOptions: {
+			/* ... */
+		},
+		devOptions: {
+			open: 'none',
+		},
+		buildOptions: {
+			/* ... */
+		},
+	}
+}
 
 const generateMountConfig = (objParams) => {
 	const tmpMountConfiguration = {}
@@ -39,53 +87,4 @@ const generateMountConfig = (objParams) => {
 	}
 } // generateMountConfig()
 
-const mountConfiguration = generateMountConfig({
-	default: {
-		src: '/dist',
-		public: {
-			url: '/',
-			static: true,
-			resolve: false,
-		},
-	},
-	deep: {
-		assets: {
-			url: '/dist',
-			static: true,
-			resolve: false,
-		},
-	},
-})
-
-// console.log(getDirectoriesRecursive('assets'))
-
-/** @type {import("snowpack").SnowpackUserConfig } */
-export default {
-	alias: {
-		js: './src',
-	},
-	mount: mountConfiguration,
-	env: ImportMeta.env,
-	plugins: [
-		/* ... */
-	],
-	routes: [
-		/* Enable an SPA Fallback in development: */
-		// {"match": "routes", "src": ".*", "dest": "/index.html"},
-	],
-	optimize: {
-		bundle: true,
-		minify: true,
-		target: 'es2018',
-		treeshake: true,
-	},
-	packageOptions: {
-		/* ... */
-	},
-	devOptions: {
-		open: 'none',
-	},
-	buildOptions: {
-		/* ... */
-	},
-}
+export default SnowpackConfig()
