@@ -9,7 +9,8 @@
 		"lint:fix": "npm run lint -- --fix",
 		"prettier:fix": "npm run prettier -- --write",
 		"format": "npm run prettier:fix && npm run lint:fix",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"pre-commit": "lint-staged"
 	},
 	"devDependencies": {
 		"@snowpack/plugin-react-refresh": "^2.5.0",
