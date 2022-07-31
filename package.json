@@ -12,18 +12,6 @@
 		"prepare": "husky install",
 		"pre-commit": "lint-staged"
 	},
-  "config": {
-    "cz-emoji": {
-      "types": [
-        {
-          "emoji": "🌟",
-          "code": ":star2:",
-          "description": "A new feature",
-          "name": "feature"
-        }
-      ]
-    }
-  },
 	"devDependencies": {
 		"@snowpack/plugin-react-refresh": "^2.5.0",
 		"@snowpack/plugin-typescript": "^1.2.1",
