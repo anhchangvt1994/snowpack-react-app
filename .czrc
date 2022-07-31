@@ -1,10 +1,15 @@
 {
-	"types": [
-		{
-			"emoji": "🌟",
-			"code": ":star2:",
-			"description": "A new feature",
-			"name": "feature"
+	"path": "cz-emoji",
+	"config": {
+		"cz-emoji": {
+			"types": [
+				{
+					"emoji": "🌟",
+					"code": ":star2:",
+					"description": "A new feature",
+					"name": "feature"
+				}
+			]
 		}
-	]
+	}
 }
