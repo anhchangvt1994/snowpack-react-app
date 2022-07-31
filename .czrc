@@ -1,12 +1,10 @@
 {
-	"path": "cz-emoji",
-	"cz-emoji": {
-		"types": [
-			{
-				"emoji": "🌟",
-				"description": "A new feature",
-				"name": "feature"
-			}
-		]
-	}
+	"types": [
+		{
+			"emoji": "🌟",
+			"code": ":star2:",
+			"description": "A new feature",
+			"name": "feature"
+		}
+	]
 }
