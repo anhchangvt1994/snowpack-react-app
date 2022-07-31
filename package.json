@@ -1,7 +1,6 @@
 {
 	"type": "module",
 	"scripts": {
-		"commit": "cz",
 		"create-dts": "nodemon ./types/dts-generator.mjs --watching ./env/*.js",
 		"start": "snowpack dev",
 		"build": "snowpack build",
