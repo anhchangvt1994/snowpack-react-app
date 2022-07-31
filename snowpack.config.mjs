@@ -27,7 +27,14 @@ const SnowpackConfig = () => {
 		}),
 		env: ImportMeta.env,
 		plugins: [
-			/* ... */
+			'@snowpack/plugin-react-refresh',
+			[
+				'@snowpack/plugin-typescript',
+				{
+					/* Yarn PnP workaround: see https://www.npmjs.com/package/@snowpack/plugin-typescript */
+					...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
+				},
+			],
 		],
 		routes: [
 			/* Enable an SPA Fallback in development: */

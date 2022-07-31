@@ -44,6 +44,7 @@
 		// https://www.typescriptlang.org/tsconfig#strict
 		// https://dev.to/jsdev/strict-mode-typescript-j8p
 		"strict": true,
+		"noImplicitAny": false,
 
 		// NOTE - This option will skip type checking of declaration files if enable
 		// https://www.typescriptlang.org/tsconfig#skipLibCheck
