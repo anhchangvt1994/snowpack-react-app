@@ -10,7 +10,8 @@
 		"prettier:fix": "npm run prettier -- --write",
 		"format": "npm run prettier:fix && npm run lint:fix",
 		"prepare": "husky install",
-		"pre-commit": "lint-staged"
+		"pre-commit": "lint-staged",
+		"commitlint": "npm run commitlint -E HUSKY_GIT_PARAMS"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.3",
