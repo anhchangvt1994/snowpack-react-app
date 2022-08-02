@@ -1,5 +1,10 @@
 {
-	"ignorePatterns": ["snowpack.config.mjs", "env", "types"],
+	"ignorePatterns": [
+		"snowpack.config.mjs",
+		"env",
+		"types",
+		"commitlint.config.js"
+	],
 	"extends": [
 		"airbnb-typescript",
 		"airbnb/hooks",

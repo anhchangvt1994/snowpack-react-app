@@ -4,8 +4,9 @@
 		"cz-emoji": {
 			"types": [
 				{
-					"emoji": "🌟",
-					"code": ":star2:",
+					"emoji": "✨",
+					"code": ":sparkles:",
+					"subject": "chore",
 					"description": "A new feature",
 					"name": "feature"
 				}
