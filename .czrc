@@ -1,16 +1,8 @@
 {
-	"path": "cz-emoji",
+	"path": "git-cz",
 	"config": {
-		"cz-emoji": {
-			"types": [
-				{
-					"emoji": "✨",
-					"code": ":sparkles:",
-					"subject": "chore",
-					"description": "A new feature",
-					"name": "feature"
-				}
-			]
+		"git-cz": {
+			"disableEmoji": true
 		}
 	}
 }

@@ -3,7 +3,7 @@
 		"snowpack.config.mjs",
 		"env",
 		"types",
-		"commitlint.config.js"
+		"changelog.config.js"
 	],
 	"extends": [
 		"airbnb-typescript",
