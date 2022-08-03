@@ -1,0 +1,55 @@
+{
+	"list": ["test", "chore", "feat", "fix", "docs", "style", "perf", "release"],
+	"questions": ["type", "scope", "subject", "body", "breaking", "issues"],
+	"types": {
+		"chore": {
+			"description": "If you don't know the type will select",
+			"emoji": "🤷",
+			"value": "chore"
+		},
+		"docs": {
+			"description": " Create / change some document files (ex: *.docs, *.md)",
+			"emoji": "🗒",
+			"value": " docs"
+		},
+		"feat": {
+			"description": "Create a new feature",
+			"emoji": "🧩",
+			"value": "feat"
+		},
+		"fix": {
+			"description": "Fix a bug",
+			"emoji": "🐞",
+			"value": "fix"
+		},
+		"perf": {
+			"description": "Improve perfomance",
+			"emoji": "⚡️",
+			"value": "perf"
+		},
+		"release": {
+			"description": "Create a release commit",
+			"emoji": "🎯",
+			"value": "release"
+		},
+		"style": {
+			"description": "Only style for layout",
+			"emoji": "🎨",
+			"value": "style"
+		},
+		"test": {
+			"description": "Add / change a test",
+			"emoji": "🔬",
+			"value": "test"
+		}
+	},
+	"messages": {
+		"type": "Select the type of committing:",
+		"customScope": "Select the scope this component affects:",
+		"subject": "Short description:\n",
+		"body": "Detail description:\n",
+		"breaking": "List any breaking changes:\n",
+		"footer": "Issues this commit closes, e.g #123:",
+		"confirmCommit": "Ready to commit ?\n"
+	}
+}

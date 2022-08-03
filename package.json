@@ -11,11 +11,6 @@
 		"prepare": "husky install",
 		"pre-commit": "lint-staged"
 	},
-	"config": {
-		"git-cz": {
-			"disableEmoji": true
-		}
-	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^17.0.3",
 		"@snowpack/plugin-react-refresh": "^2.5.0",
