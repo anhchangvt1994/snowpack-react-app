@@ -1,4 +1,5 @@
 {
+	"type": "module",
 	"scripts": {
 		"create-dts": "nodemon ./types/dts-generator.mjs --watching ./env/*.js",
 		"start": "snowpack dev",
