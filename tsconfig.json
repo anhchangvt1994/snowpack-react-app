@@ -15,7 +15,7 @@
 		// https://www.typescriptlang.org/tsconfig#moduleResolution
 		// https://www.typescriptlang.org/tsconfig#moduleResolution
 		// https://www.codementor.io/@elliotaplant/understanding-javascript-module-resolution-systems-with-dinosaurs-il2oqro6e
-		"moduleResolution": "NodeNext",
+		"moduleResolution": "node",
 
 		// NOTE - Base path of project setup with this tsconfig
 		"baseUrl": ".",

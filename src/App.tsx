@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './App.css'
+import useEffectCustomize from './use-effect-customize'
 
 function App() {
 	const [count, setCount] = useState(0)
-	useEffect(() => {
+
+	const useEffectCounter = new useEffectCustomize([count])
+
+	useEffectCounter.init(() => {
 		const timer = setTimeout(() => setCount(count + 1), 1000)
 		return () => clearTimeout(timer)
-	}, [count, setCount])
+	})
 
 	return (
 		<div className="app">
